@@ -1,8 +1,12 @@
 import { Usercard } from './User';
+import Blog from './Blog';
 
 function App() {
   return (
-    <Usercard />
+    <div>
+      <Blog />
+      
+    </div>
   );
 }
 
