@@ -1,11 +1,12 @@
 import useState from "react"
-import Cart from "./Shoping";
+import Use from "./Ussefct.jsx"
 function App() {
 
 
   return (
     <div>
-   <Cart/>
+      <Use/>
+ 
     </div>
       
       
