@@ -1,11 +1,13 @@
 import useState from "react"
-import Use from "./Ussefct.jsx"
+
+import MouseT from "./Mousec.jsx";
 function App() {
 
 
   return (
     <div>
-      <Use/>
+      <MouseT/>
+
  
     </div>
       
