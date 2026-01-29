@@ -1,12 +1,13 @@
 import useState from "react"
-
+import COUNtdown from "./countdown.jsx";
 import MouseT from "./Mousec.jsx";
 function App() {
 
 
   return (
     <div>
-      <MouseT/>
+      <COUNtdown/>
+     
 
  
     </div>
