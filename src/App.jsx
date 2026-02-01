@@ -1,12 +1,12 @@
 import useState from "react"
-import COUNtdown from "./countdown.jsx";
-import MouseT from "./Mousec.jsx";
+import Gitfetch from "./apifetch.jsx";
+
 function App() {
 
 
   return (
     <div>
-      <COUNtdown/>
+      <Gitfetch />
      
 
  
