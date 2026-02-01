@@ -1,12 +1,12 @@
 import useState from "react"
-import Gitfetch from "./apifetch.jsx";
+import UserList from "./userlist";
 
 function App() {
 
 
   return (
     <div>
-      <Gitfetch />
+      <UserList />
      
 
  
