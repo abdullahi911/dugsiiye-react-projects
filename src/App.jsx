@@ -1,21 +1,31 @@
-import  useState  from "react";
-import Login from "./login";
-import Count from "./Count";
-import Appcounter from "./Appcounter";
-import Registration from "./multi-stepr";
+import { useState } from "react";
+import Languagecontext from "./Languagepr";
+import { Languagech } from "./Languagech";
+
 function App() {
 
+  const [language, setLanguage] = useState("spanish");
+
+  const changeLanguage = () => {
+    setLanguage((prev) =>
+      prev === "spanish" ? "english" : "spanish"
+    );
+  };
 
   return (
-    <div>
-   <Registration/>
- 
-  
+    <Languagecontext.Provider value={language}>
 
- 
-    </div>
-      
-      
+      <button onClick={changeLanguage}>
+        Switch to {language === "spanish" ? "english" : "spanish"}
+      </button>
+
+      <h1>
+        {language === "spanish" ? "Hola!" : "Hello!"}
+      </h1>
+
+
+
+    </Languagecontext.Provider>
   );
 }
 

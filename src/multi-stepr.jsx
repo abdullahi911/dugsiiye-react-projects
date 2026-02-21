@@ -87,7 +87,7 @@ const Registration = () => {
         </>
       )}
 
-      {/* STEP 2 */}
+      {}
       {state.step === 2 && (
         <>
           <h3>Step 2 : Contact</h3>
@@ -130,7 +130,7 @@ const Registration = () => {
         </>
       )}
 
-      {/* STEP 3 */}
+      {}
       {state.step === 3 && (
         <>
           <h3>Step 3 : Confirm</h3>
