@@ -1,19 +1,22 @@
 import React, { useReducer } from "react";
-import ContactContext from "./ContactContext.js";
-import { contactReducer } from "./ContactReducer.jsx"; // must exist
-import { ContactItem } from "./Contactitem.js";
-import { ContactList } from "./Contactlist.jsx";
- const ContactApp = () => {
+import ContactContext from "./ContactContext";
+import { contactReducer } from "./ContactReducer";
+import { ContactItem } from "./ContactItem";
+import { ContactList } from "./ContactList";
+import styles from "./contact.module.css";
+
+const ContactApp = () => {
   const [contacts, dispatch] = useReducer(contactReducer, []);
 
   return (
     <ContactContext.Provider value={{ contacts, dispatch }}>
-      <div style={{ padding: "20px", maxWidth: "500px", margin: "auto" }}>
-        <h2>Contact App</h2>
+      <div className={styles.container}>
+        <h2 className={styles.title}>Contact App</h2>
         <ContactItem />
-        <ContactList /> 
+        <ContactList />
       </div>
     </ContactContext.Provider>
   );
 };
+
 export default ContactApp;

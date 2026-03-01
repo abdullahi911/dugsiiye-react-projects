@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ContactApp from "../../src/ContactFIle/ContacpApp.jsx";
+import ContactApp from "./ContactFIle/ContacpApp";
 
   const App = () => {
      
@@ -7,8 +7,7 @@ import ContactApp from "../../src/ContactFIle/ContacpApp.jsx";
     return(
 
 <>
-      <ContactApp />
-
+<ContactApp />
 </>
 
 

@@ -1,0 +1,97 @@
+body {
+  background-color: #f4aeae;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #7ebab2;
+  border: 2px solid #e4e4e4;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sectionTitle {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input:focus {
+  border-color: #007bff;
+}
+
+.button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 5px;
+}
+
+.addBtn {
+  background-color: #007bff;
+  color: white;
+}
+
+.addBtn:hover {
+  background-color: #0056b3;
+}
+
+.editBtn {
+  background-color: orange;
+  color: white;
+}
+
+.deleteBtn {
+  background-color: crimson;
+  color: white;
+}
+
+.favoriteBtn {
+  background-color: #28a745;
+  color: white;
+}
+
+.cancelBtn {
+  background-color: gray;
+  color: white;
+}
+
+.contactCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #fafafa;
+}
+
+.star {
+  color: gold;
+  font-size: 18px;
+}
