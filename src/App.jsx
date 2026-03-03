@@ -1,17 +1,13 @@
-import { useState } from "react";
-import ContactApp from "./ContactFIle/ContacpApp";
+import React from 'react';
+import Dashboard from './StudentDashboard';
 
-  const App = () => {
-     
-
-    return(
-
-<>
-<ContactApp />
-</>
-
-
-    )
-  }
+const App = () => {
+  return (
+    <>
+    <Dashboard />
+  
+    </>
+  );
+};
 
 export default App;
