@@ -1,11 +1,11 @@
 import React from 'react';
-import Dashboard from './StudentDashboard';
+import Forms from './Forms';
 
 const App = () => {
   return (
     <>
-    <Dashboard />
-  
+
+    <Forms />
     </>
   );
 };
