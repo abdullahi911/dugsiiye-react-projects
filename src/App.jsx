@@ -1,11 +1,11 @@
 import React from 'react';
-import Forms from './Forms';
+import Developerform from './Developerform';
 
 const App = () => {
   return (
     <>
+<Developerform />
 
-    <Forms />
     </>
   );
 };
