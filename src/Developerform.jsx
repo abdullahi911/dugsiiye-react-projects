@@ -40,7 +40,7 @@ const Developerform = () => {
   const validate = () => {
     let newErrors = {};
 
-    // Name validation
+
     const nameRegex = /^[A-Za-z\s]{2,30}$/;
 
     if (!formData.name) {
@@ -49,7 +49,6 @@ const Developerform = () => {
       newErrors.name = "Name must be letters only (2-30 characters)";
     }
 
-    // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!formData.email) {
@@ -58,24 +57,23 @@ const Developerform = () => {
       newErrors.email = "Enter a valid email";
     }
 
-    // Role validation
+
     if (!formData.role) {
       newErrors.role = "Please select a role";
     }
 
-    // Experience validation
     if (!formData.experience) {
       newErrors.experience = "Experience is required";
     } else if (formData.experience < 5 || formData.experience > 50) {
       newErrors.experience = "Experience must be between 5 and 50";
     }
 
-    // Skills validation
+
     if (formData.skills.length === 0) {
       newErrors.skills = "Select at least one skill";
     }
 
-    // Agreement validation
+
     if (!formData.agreement) {
       newErrors.agreement = "You must agree to the terms";
     }
@@ -104,7 +102,7 @@ const Developerform = () => {
           Developer Application Form
         </h1>
 
-        {/* Name */}
+      
         <div>
           {errors.name && (
             <p className="text-red-500 text-sm mb-1">{errors.name}</p>
@@ -119,7 +117,7 @@ const Developerform = () => {
           />
         </div>
 
-        {/* Email */}
+ 
         <div>
           {errors.email && (
             <p className="text-red-500 text-sm mb-1">{errors.email}</p>
@@ -134,7 +132,7 @@ const Developerform = () => {
           />
         </div>
 
-        {/* Role */}
+
         <div>
           {errors.role && (
             <p className="text-red-500 text-sm mb-1">{errors.role}</p>
@@ -152,7 +150,7 @@ const Developerform = () => {
           </select>
         </div>
 
-        {/* Experience */}
+
         <div>
           {errors.experience && (
             <p className="text-red-500 text-sm mb-1">{errors.experience}</p>
@@ -167,7 +165,7 @@ const Developerform = () => {
           />
         </div>
 
-        {/* Skills */}
+
         <div>
           <p className="font-medium">Skills</p>
 
@@ -191,7 +189,6 @@ const Developerform = () => {
           </div>
         </div>
 
-        {/* Agreement */}
         <div>
           {errors.agreement && (
             <p className="text-red-500 text-sm mb-1">{errors.agreement}</p>
@@ -208,7 +205,7 @@ const Developerform = () => {
           </label>
         </div>
 
-        {/* Notifications */}
+        {}
         <label className="flex items-center gap-2">
           <input
             type="checkbox"

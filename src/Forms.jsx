@@ -38,7 +38,7 @@ const Forms = () => {
       
       <form
         onSubmit={handlesubmit}
-        className="bg-red-200 p-8 rounded-2xl shadow-lg w-full max-w-md space-y-5"
+        className="bg-red-100-tu p-8 rounded-2xl shadow-lg w-full max-w-md space-y-5"
       >
         <h2 className="text-2xl font-bold text-gray-800 text-center">
           User Registration

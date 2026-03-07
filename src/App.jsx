@@ -1,11 +1,11 @@
 import React from 'react';
-import Developerform from './Developerform';
+import Studentregistration from './Studentregistration';
 
 const App = () => {
   return (
     <>
-<Developerform />
-
+      <h1>Welcome to the Student Registration Portal</h1>
+      <Studentregistration />
     </>
   );
 };
