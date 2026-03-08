@@ -1,13 +1,13 @@
-import React from 'react';
-import Studentregistration from './Studentregistration';
-
-const App = () => {
+import { Outlet } from "react-router-dom";
+import Nav from "./Pages/Nav";
+function App() {
   return (
     <>
-      <h1>Welcome to the Student Registration Portal</h1>
-      <Studentregistration />
+    
+      <Nav />
+      <Outlet />
     </>
   );
-};
+}
 
 export default App;
