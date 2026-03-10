@@ -1,10 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from "./App";
-import Home from "./Pages/Home";
-import Recipes from "./Pages/Recipes";
-import RecipeDetail from "./Pages/RecipeDetail";
-import Categories from "./Pages/Categories";
-import CategoryRecipes from "./Pages/CategoryRecipes";
+import App from "../App";
+import Home from "./Home";
+import Recipes from "./Recipes";
+import RecipeDetail from "./RecipeDetail";
+import Categories from "./Categories";
+import CategoryRecipes from "./CategoryRecipes";
 
 const Router = createBrowserRouter([
   {

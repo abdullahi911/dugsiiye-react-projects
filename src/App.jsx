@@ -1,13 +1,17 @@
+import React from "react";
 import { Outlet } from "react-router-dom";
-import Nav from "./Pages/Nav";
-function App() {
+import Nav from "./Postpages/Nav";
+
+const App = () => {
   return (
-    <>
-    
+    <div>
       <Nav />
-      <Outlet />
-    </>
+
+      <main className="p-6">
+        <Outlet />
+      </main>
+    </div>
   );
-}
+};
 
 export default App;
